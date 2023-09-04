@@ -1,0 +1,139 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - type: Button
+    properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Cancel, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: button_1
+    layout_properties: {}
+    event_bindings: {click: button_1_click}
+- type: Label
+  properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: Add Employee, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_1
+  layout_properties: {slot: title}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1
+  layout_properties: {slot: default}
+  components:
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_7
+    layout_properties: {width: 139}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'First Name
+
+        ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: FN
+    layout_properties: {}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: Enter First Name,
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: FNbox
+    layout_properties: {width: 524.242}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {width: 169}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1_copy
+  layout_properties: {slot: default}
+  components:
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_6
+    layout_properties: {width: 143}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Last Name, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: LN
+    layout_properties: {}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: Enter Last Name,
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: LNBox
+    layout_properties: {width: 524.242}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy
+    layout_properties: {width: 169}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1_copy_2
+  layout_properties: {slot: default}
+  components:
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_5
+    layout_properties: {width: 155}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Position, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: Pos
+    layout_properties: {}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: Enter Position,
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: Posbox
+    layout_properties: {width: 524.242}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_2
+    layout_properties: {width: 169}
+- type: FlowPanel
+  properties: {role: null, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1_copy_3
+  layout_properties: {slot: default}
+  components:
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_4
+    layout_properties: {width: 169}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Salary, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: Salary
+    layout_properties: {}
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: Enter Salary,
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: Salarybox
+    layout_properties: {width: 524.242}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1_copy_3
+    layout_properties: {width: 169}

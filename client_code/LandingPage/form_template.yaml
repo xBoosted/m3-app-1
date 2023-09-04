@@ -16,6 +16,14 @@ components:
     name: button_1
     layout_properties: {grid_position: 'ITAUOE,UPTMKR'}
     event_bindings: {click: button_1_click}
+  - type: Button
+    properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Bus Details, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'DBSQDP,FBNIOM'}
+    event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

@@ -38,4 +38,33 @@ db_schema:
       type: bool
       admin_ui: {order: 5, width: 200}
     title: Users
+  employee_data:
+    client: full
+    server: full
+    columns:
+    - name: First Name
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: Last Name
+      type: string
+      admin_ui: {width: 200, order: 1}
+    - name: Photo
+      admin_ui: {width: 200}
+      type: media
+    - name: Salary
+      admin_ui: {width: 200}
+      type: number
+    - name: Title
+      admin_ui: {width: 200}
+      type: link_single
+      target: employee_positions
+    title: Employee Data
+  employee_positions:
+    client: full
+    server: full
+    columns:
+    - name: Employee Position
+      type: string
+      admin_ui: {width: 200, order: 0}
+    title: Employee Positions
 renamed: true

@@ -2,15 +2,21 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  data_bindings: []
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - type: Button
+    properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Return to Main Menu, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_1
+    layout_properties: {}
+    event_bindings: {click: button_1_click}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Employee Data, font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -18,3 +24,47 @@ components:
     icon: ''}
   name: label_1
   layout_properties: {slot: title}
+- type: DataGrid
+  properties:
+    role: null
+    columns:
+    - {id: XUGCWK, title: First Name, data_key: First Name, $$hashKey: 'object:31964'}
+    - {id: PNCMLF, title: Last Name, data_key: Last Name, $$hashKey: 'object:31965'}
+    - {id: WACYEF, title: Position, data_key: Position, $$hashKey: 'object:31966'}
+    - {id: AHXAEQ, title: Salary, data_key: Salary, $$hashKey: 'object:31967'}
+    auto_header: true
+    tooltip: ''
+    border: ''
+    foreground: ''
+    rows_per_page: 20
+    visible: true
+    wrap_on: never
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    background: ''
+  name: data_grid_1
+  layout_properties: {slot: default}
+  components:
+  - type: RepeatingPanel
+    properties: {role: tonal-card, tooltip: '', border: '', foreground: '', items: null,
+      visible: true, spacing_above: none, spacing_below: none, item_template: EmployeeData.RowTemplate4,
+      background: ''}
+    name: repeating_panel_1
+    layout_properties: {}
+    data_bindings:
+    - {property: items, code: 'self.item[''First name'']'}
+    - {property: items, code: 'self.item[''Last Name'']'}
+    - {property: items, code: 'self.item[''Title'']'}
+    - {property: items, code: 'self.item[''Salary'']'}
+    - {property: foreground, code: 'self.item[''Photo'']'}
+    event_bindings: {show: repeating_panel_1_show}
+  - type: Button
+    properties: {role: tonal-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Add Employee, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: true, underline: false, icon: ''}
+    name: button_2
+    layout_properties: {}
+    event_bindings: {click: button_2_click}
+  data_bindings: []
