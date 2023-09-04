@@ -58,6 +58,9 @@ db_schema:
       admin_ui: {width: 200}
       type: link_single
       target: employee_positions
+    - name: Position
+      admin_ui: {width: 200}
+      type: string
     title: Employee Data
   employee_positions:
     client: full

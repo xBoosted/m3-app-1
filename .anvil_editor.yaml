@@ -12,7 +12,8 @@ unique_ids:
     EmployeeData.RowTemplate1: '1693807914558572017978703.1594'
     AddEmployee.ItemTemplate3: '1693810542354745809950535.1063'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1693813527528569428733750.9984'
   assets:
     standard-page.html: D6UULR4DB567RO2FMLJVSX3KDBA2QZAV
     theme.css: GFJ4LY2LS2DZTBRBGLROSBO7HSYILQU3
